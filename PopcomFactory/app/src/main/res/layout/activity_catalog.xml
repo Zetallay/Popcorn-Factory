@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:background="@color/fondoMain">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:fontFamily="@string/condensed"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/series"
+        android:textSize="30sp"
+        android:textColor="@color/fondoBoton">
+    </TextView>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/button"
+        >
+
+    </Button>
+</LinearLayout>
+
+
+
+
+    <GridView
+        android:id="@+id/serie_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:paddingHorizontal="10dp"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:fontFamily="@string/condensed"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movies"
+            android:textColor="@color/fondoBoton"
+            android:layout_gravity="right"
+            android:textSize="30sp"></TextView>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/button"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+    <GridView
+        android:id="@+id/movies_catalog"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:paddingHorizontal="10dp"></GridView>
+
+
+
+
+
+
+
+
+</LinearLayout>
